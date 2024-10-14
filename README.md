@@ -1,9 +1,8 @@
 # UniPT
 This is an official implementation of UniPT, full codes will be released soon
 ## Getting Started
-### Installation
 
-### Requirements
+### Installation & Requirements
 All the codes are tested in the following environment:
 * Python = 3.7.16
 * CUDA = 11.1
@@ -11,7 +10,6 @@ All the codes are tested in the following environment:
 * torch-scatter= 2.0.6
 * torchvision = 0.9.1+cu111
 * spconv-cu111 = 2.1.25
-
 
 a. Clone this repository.
 ```shell
@@ -172,5 +170,6 @@ bash scripts/MDF/dist_train_mdf.sh ${NUM_GPUs} \
 
 * Test the models using multiple GPUs
 ```shell script
-bash scripts/MDF/dist_test_mdf.sh ${NUM_GPUs} --cfg_file ${CFG_FILE} --ckpt ${CKPT} --source_one_name ${FIRST_DB_NAME} --source_1 ${DB_SOURCE} 
+bash scripts/MDF/dist_test_mdf.sh ${NUM_GPUs} --cfg_file ${CFG_FILE} --ckpt ${CKPT} \
+--source_one_name ${FIRST_DB_NAME} --source_1 ${DB_SOURCE} 
 ```
