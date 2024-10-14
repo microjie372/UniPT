@@ -5,7 +5,6 @@ This is an official implementation of UniPT, full codes will be released soon
 
 Set up the environment
 
-* Ubuntu18.04/20.04
 * Python = 3.7.16
 * CUDA = 11.1
 * torch = 1.8.1+cu111
