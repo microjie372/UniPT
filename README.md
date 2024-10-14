@@ -1,4 +1,4 @@
-# UniPT
+# UniPT: A Unified Representation Pre-Training for Multi-dataset 3D Object Detection
 This is an official implementation of UniPT, full codes will be released soon
 ## Getting Started
 
