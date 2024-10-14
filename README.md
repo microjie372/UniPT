@@ -126,7 +126,7 @@ python -m pcdet.datasets.nuscenes.nuscenes_dataset --func create_nuscenes_infos 
 
 ## Training-Testing for UniPT on Multi-dataset Object Detection
 
-Here, we take Waymo-and-nuScenes consolidation as an example.
+Here, we take Waymo-nuScenes consolidation as an example.
 
 ## Pre-training stage: train a UniPT model on the merged dataset: 
 
@@ -164,7 +164,7 @@ bash scripts/MDF/dist_train_mdf.sh ${NUM_GPUs} \
 ## Evaluation stage: evaluate the detection model on different datasets:
 * Note that for the KITTI-related evaluation, please try --set DATA_CONFIG.FOV_POINTS_ONLY True to enable front view point cloud only.
 
-- ${FIRST_DB_NAME} denotes that the fisrt dataset name of the merged two dataset, which is used to split the merged dataset into two individual datasets.
+- ${FIRST_DB_NAME} denotes that the first dataset name of the merged two dataset, which is used to split the merged dataset into two individual datasets.
 
 - ${DB_SOURCE} denotes the dataset to be tested.
 
