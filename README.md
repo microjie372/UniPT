@@ -98,7 +98,6 @@ UniPT
 python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/kitti/MDF/kitti_dataset.yaml
 ```
 
-&ensp;
 ### NuScenes Dataset
 * Please download the official [NuScenes 3D object detection dataset](https://www.nuscenes.org/download) and 
 organize the downloaded files as follows: 
