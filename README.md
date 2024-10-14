@@ -40,7 +40,6 @@ python setup.py develop
 
 We provide the dataloader for Waymo, KITTI and NuScenes datasets.  
 
-&ensp;
 ### Waymo Open Dataset
 * Please download the official [Waymo Open Dataset](https://waymo.com/open/download/), 
 including the training data `training_0000.tar~training_0031.tar` and the validation 
