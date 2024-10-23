@@ -53,3 +53,5 @@ bash scripts/MDF/dist_train_mdf.sh ${NUM_GPUs} \
 bash scripts/MDF/dist_test_mdf.sh ${NUM_GPUs} --cfg_file ${CFG_FILE} --ckpt ${CKPT} \
 --source_one_name ${FIRST_DB_NAME} --source_1 ${DB_SOURCE} 
 ```
+
+## Visualization
