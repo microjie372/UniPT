@@ -12,15 +12,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 def visualize_features_MDF(waymo_feature, nusc_feature, index):
-    """
-    可视化 waymo_feature 和 nusc_feature 的 t-SNE 结果，并保存图像。
-    
-    参数:
-    waymo_feature (numpy.ndarray): 原始特征，形状为 (1, C, D)。
-    nusc_feature (numpy.ndarray): DSA 特征，形状为 (1, C, D)。
-    video_name (str): 视频名称，用于图像标题。
-    save_path (str): 保存图像的路径。
-    """
     video_name = f"waymo-nusc-{index}"    #change your own file name
     num_classes = 4
     save_dir = "./visualfig-WN-unipt"     #change your own file path
@@ -28,7 +19,6 @@ def visualize_features_MDF(waymo_feature, nusc_feature, index):
     
     if waymo_feature.shape[0] != 1 or nusc_feature.shape[0] != 1:
         raise ValueError("Features should have shape (1, T, D).")
-
     
     waymo_feature_2d = waymo_feature.squeeze(0)
     nusc_feature_2d = nusc_feature.squeeze(0)
@@ -73,7 +63,7 @@ def visualize_features_MDF(waymo_feature, nusc_feature, index):
     print(f"Feature visualization saved to {save_path}")
 
 def main():
-    for i in range(50):
+    for i in range(100):
         data_waymo = np.load(f'./fig-waymo-unipt/waymo_tsne_{i}.npy')        #change your own file path
         data_nusc = np.load(f'./fig-nusc-unipt/nusc_tsne_{i}.npy')           #change your own file path
        
