@@ -55,8 +55,8 @@ bash scripts/MDF/dist_test_mdf.sh ${NUM_GPUs} --cfg_file ${CFG_FILE} --ckpt ${CK
 ```
 
 ## Visualization
-<p align="center"> <img src="docs/imgs/waymo.png" width="100%"> </p>
+<p align="center"> <img src="docs/img/waymo.png" width="100%"> </p>
 
-<p align="center"> <img src="docs/imgs/nusc.png" width="100%"> </p>
+<p align="center"> <img src="docs/img/nusc.png" width="100%"> </p>
 
-<p align="center"> <img src="docs/imgs/kitti.png" width="100%"> </p>
+<p align="center"> <img src="docs/img/kitti.png" width="100%"> </p>
