@@ -153,8 +153,6 @@ class NuScenesDataset(DatasetTemplate):
             nuscenes_infos.extend(infos)
         self.infos.extend(nuscenes_infos[:])
 
-        #length = len(self.infos)
-        #print(length)
         print(self.index)
         info = copy.deepcopy(self.infos[self.index])
         print('The index of visualization is:', info['lidar_path'])
