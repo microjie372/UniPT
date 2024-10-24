@@ -1,6 +1,6 @@
 # UniPT: A Unified Representation Pre-Training for Multi-dataset 3D Object Detection
 This is an official implementation of UniPT-a pre-training method to learn unified representation for Multi-dataset 3D Object Detection.
-Full codes have been released.
+Full codes will be released soon.
 ## Getting Started
 You may refer to [INSTALL.md](docs/INSTALL.md) for the installation of `UniPT` and [GETTING STARTED.md](docs/GETTING_STARTED.md) to prepare the datasets.
 
