@@ -384,7 +384,7 @@ def main():
         logger.info('**********************Testing Dataset=waymo**********************')
         
     elif args.source_1 == 2:
-        logger.info('**********************Testing Dataset=kitti**********************')  #nusc
+        logger.info('**********************Testing Dataset=nusc**********************')  #kitti
       
     model.load_params_from_file(filename=args.ckpt, logger=logger, to_cpu=True)
     model.cuda()
