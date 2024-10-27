@@ -372,16 +372,10 @@ class DENSE_CR(nn.Module):
             if self.db_source == 1:
                 out_s1 = self.se_s1(shared) + spatial_features_2d_s1
                 data_dict['spatial_features_2d'] = out_s1
-
-                waymo_tsne = data_dict['spatial_features_2d'].view(batch_size, C, H*W).cpu().detach().numpy()
-                data_dict['waymo_tsne'] = waymo_tsne
                 
             elif self.db_source == 2:
                 out_s2 = self.se_s2(shared) + spatial_features_2d_s2
                 data_dict['spatial_features_2d'] = out_s2
-
-                nusc_tsne = data_dict['spatial_features_2d'].view(batch_size, C, H*W).cpu().detach().numpy()
-                data_dict['nusc_tsne'] = nusc_tsne
             
         return data_dict
 
