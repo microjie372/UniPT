@@ -1,5 +1,5 @@
 # UniPT: A Unified Representation Pre-Training for Multi-dataset 3D Object Detection
-This is an official implementation of UniPT-a pre-training method to learn unified representation for Multi-dataset 3D Object Detection.
+This is an official implementation of UniPT: a pre-training framework to learn unified representation for Multi-dataset 3D Object Detection.
 
 ## Framework
 <p align="center"> <img src="docs/img/UniPT.png" width="100%"> </p>
